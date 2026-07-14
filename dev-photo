@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base target="_top">
+
+  <link rel="apple-touch-icon" href="ZooAppIcon.png">
+  <link rel="icon" href="ZooAppIcon.png" type="image/png">
+  <link rel="manifest" href="manifest.json">
+
+  <title>Dev (Photo)</title>
+
+  <style>
+    html, body, iframe {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <iframe src="https://script.google.com/macros/s/AKfycbyVgvDVzw2bZ7iRKt_vRijauNv_fA7nEAvW2NdBciwe3qghdzGZvhiDTls14qMGrGWhPw/exec"></iframe>
+</body>
+</html>
