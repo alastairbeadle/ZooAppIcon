@@ -8,6 +8,8 @@
   <link rel="icon" href="ZooAppIcon.png" type="image/png">
   <link rel="manifest" href="manifest.json">
 
+  <title>Dev (London)</title>
+
   <style>
     html, body, iframe {
       margin: 0;
@@ -24,21 +26,6 @@
 
     // Remove .html → "whipsnade"
     const deployment = filename.replace(".html", "");
-
-    // Build title according to your rules
-    let title;
-
-    if (deployment.startsWith("dev-")) {
-      // dev-whipsnade → Dev(Whipsnade)
-      const rest = deployment.substring(4); // remove "dev-"
-      title = "Dev (" + rest.charAt(0).toUpperCase() + rest.slice(1) + ")";
-    } else {
-      // whipsnade → Whipsnade
-      title = deployment.charAt(0).toUpperCase() + deployment.slice(1);
-    }
-
-    // Apply title
-    document.title = title;
 
     // Load deployments map
     fetch("deployments.json")
