@@ -22,10 +22,7 @@
 
   <script>
     // Calculate deployment name from filename
-    const deployment = window.location.pathname
-      .split("/")
-      .pop()
-      .replace(".html", "");
+    const deployment = window.location.pathname.split("/").pop().replace(".html", "");
 
     // Load the deployments map
     fetch("deployments.json")
